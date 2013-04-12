@@ -1,0 +1,165 @@
+/*<ul> du MENU*/
+#menu
+{
+position: absolute;
+list-style-type: none;
+font-family: Georgia, serif;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+/*Fin
+
+<li> dans le <ul> du MENU*/
+#menu li
+{
+float: left;
+width: 170px;
+line-height:30px;
+margin: 0;
+padding: 0;
+}
+#menu li:hover > .sous-menu
+{
+display: block;
+}
+/*Fin
+
+<a> du MENU
+L'ordre du CSS n'as habituellement aucune importance, mais dans le cas des pseudo-class on doit prêter attention.
+On ne peut pas défénir :hover si on n'a même pas déféni à la base :link, et ainsi de suite.
+L'ordre à respecter est le suivant : link, visited, focus, hover, active*/
+#menu li a:link , #menu li a:visited
+/*L'ancre "link" et l'ancre "visited" sont sur la même ligne car elles ont les mêmes propriétés.*/
+{
+display: block;
+color: #ffccff;
+text-decoration: none;
+background-color: #660066;
+border-right: 2px solid #ffccff;
+border-left: 2px solid #ffccff;
+}
+#menu li a:hover
+{
+color: #660066;
+background-color: #ffccff;
+border-right: 2px solid #66ccff;
+border-left: 2px solid #ffccff;
+}
+#menu li a:active
+{
+color: #ffccff;
+background-color: #66ccff;
+border-left: 2px solid #66ccff;
+}
+/*Fin
+
+<ul> dans les <li> du MENU c'est-à-dire <ul> du SOUS-MENU*/
+#menu .sous-menu
+{
+display: none;
+position: absolute;
+list-style-type: none;
+font-size: 16px;
+font-weight: normal;
+margin: 0;
+padding: 0;
+z-index: 1;
+}
+/*Fin
+
+<li> dans le <ul> du SOUS-MENU*/
+#menu .sous-menu li
+{
+float: none;
+width: 170px;
+line-height: 20px;
+}
+#menu .sous-menu li:hover > .sous--menu
+{
+display: block;
+}
+/*Fin
+
+<a> du SOUS-MENU
+Rappel : L'ordre est importante!*/
+#menu .sous-menu li a:link, #menu .sous-menu li a:visited
+/*Rappel : Elles ont les mêmes propriétés.*/
+{
+display: block;
+color: #660066;
+text-decoration: none;
+background-color: #ffccff;
+border-right: 2px solid #660066;
+border-bottom: 1px solid #660066;
+border-left: 2px solid #660066;
+}
+#menu .sous-menu li a:hover
+{
+color: #ffccff;
+background-color: #660066;
+border-right: 2px solid #66ccff;
+}
+#menu .sous-menu li a:active
+{
+background-color: #66ccff;
+border-left: 2px solid #66ccff;
+}
+/*Fin
+
+<ul> dans les <li> du SOUS-MENU c'est-à-dire <ul> du SOUS--MENU*/
+#menu .sous-menu .sous--menu
+{
+display: none;
+position: relative;
+left: 170px;
+Bottom: 42px;
+list-style-type: none;
+margin: 0;
+padding: 0;
+z-index: 2
+}
+/*Fin
+
+<li> dans le <ul> du SOUS--MENU*/
+#menu .sous-menu .sous--menu li
+{
+float: none;
+width: 170px;
+line-height: 20px;
+}
+/*Fin
+
+<a> du SOUS--MENU
+Rappel : L'ordre est importante!*/
+#menu .sous-menu .sous--menu li a:link, #menu .sous-menu .sous--menu li a:visited
+/*Rappel : Elles ont les mêmes propriétés.*/
+{
+display: block;
+color: #660066;
+background-color: #ffccff;
+border-right: 2px solid #660066;
+border-bottom: 1px solid #660066;
+border-left: 2px solid #660066;
+}
+#menu .sous-menu .sous--menu li a:hover
+{
+color: #ffccff;
+background-color: #660066;
+border-right: 2px solid #66ccff;
+}
+#menu .sous-menu .sous--menu li a:active
+{
+background-color: #66ccff;
+border-left: 2px solid #66ccff;
+}
+/*Fin
+
+Basé sur le modèle de
+http://www.easytutoriel.com/comment-creer-un-menu-deroulant-en-css-sans-javascript/
+et modifié dans le cadre d'un projet scolaire.
+
+Les annotations font preuve d'une recherche et d'une compréhension approfondi du code utilisé;
+elles servent aussi de moyen de communication entre coéquipié*/

@@ -1,0 +1,269 @@
+/*CSS propre à toutes les pages*/
+body
+/*Image libre de droit pris sur Wallpaperdev; ils veulent qu'on la partage.*/
+{
+background: url('../images/lightabstract.jpg');
+}
+
+#div-body
+{
+position: relative;
+margin: 0 auto;
+max-width:1010px;
+min-width: 800px;
+}
+
+h1
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+}
+
+h2
+{
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 14px;
+font-weight: bold;
+}
+
+#banniere
+{
+position: absolute;
+top: 0;
+left: 160px;
+}
+
+#logo
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 152px;
+height: 171px;
+background-color: white;
+border: 2px solid #ffccff;
+margin: 2px;
+}
+
+#navbar
+{
+display: block;
+position: absolute;
+top: 149px;
+left: 160px;
+width: 850px;
+}
+
+#breadcrum
+{
+position: absolute;
+top: 179px;
+left: 160px;
+width: 850px;
+height: 30px;
+font-style: Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: white;
+}
+
+#nousrejoindre
+{
+position: absolute;
+top: 239px;
+left: 0;
+width: 148px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+background-color: white;
+border: 2px solid #ffccff;
+margin: 2px;
+padding: 2px;
+}
+
+/*Fin
+
+CSS propre à la page en construction.*/
+#construction
+/*Image pris sur un forum linux libre de droit*/
+{
+position: absolute;
+top: 269px;
+left: 160px;
+width: 850px;
+font-family: Impact, Charcoal, sans-serif;
+font-size: 16px;
+text-align: center;
+text-decoration: blink;
+color: #ffff99;
+margin: 0;
+padding: 0;
+}
+/*Fin
+
+CSS propre à la page d'accueil*/
+#liens
+{
+position: absolute;
+top: 179px;
+left: 0px;
+width: 148px;
+height: 48px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+background-color: white;
+border: 2px solid #ffff99;
+margin: 2px;
+padding: 2px;
+}
+
+#nouvelles
+{
+position: absolute;
+left: 160px;
+top: 209px;
+width: 838px;
+height: 300px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 14px;
+text-align: justify;
+background-color: white;
+border: 2px solid #66ccff;
+margin: 2px;
+padding: 2px;
+}
+
+#video-presentation
+{
+position: absolute;
+left: 160px;
+top: 521px;
+width: 838px;
+text-align: center;
+background-color: white;
+border: 2px solid #66ccff;
+margin: 2px;
+padding: 2px;
+}
+/*Fin
+
+CSS propre à la page programme*/
+#sommaire
+{
+position: absolute;
+left: 160px;
+top: 209px;
+margin: 0;
+padding: 0;
+}
+
+.table-sommaire
+/*Les "class" nous permet de regrouper les <th>, <td>, etc., de la table pour les modifier en même temps;
+ cela nous permet aussi de créer plusieurs tables avec des propriétés différentes pour chacune d'elle.*/
+{
+float: left;
+width: 400px;
+height: 300px;
+background-color: white;
+border: 2px solid #66ccff;
+margin: 2px;
+padding: 2px;
+}
+
+.th-st
+/*Titre de la table*/
+{
+font-family: "Arial Black", Gadget, sans-serif;
+Font-size: 16px;
+Font-weight: bold;
+padding: 2px;
+}
+
+.th-sst
+/*titre des colonnes */
+{
+font-family: "Arial Black", Gadget, sans-serif;
+Font-size: 14px;
+Font-weight: bold;
+}
+
+.td-s1
+/*Colonne 1*/
+{
+width: 250px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+
+.td-s2
+/*Colonne 2 et 3*/
+{
+width: 75px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+/*Fin
+
+CSS propre aux pages professeurs*/
+#benoit-desrosiers
+{
+position: absolute;
+left: 160px;
+top: 209px;
+max-width: 838px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 14px;
+text-align: justify;
+background-color: white;
+border: 2px solid #66ccff;
+margin: 2px;
+padding: 2px;
+}
+
+#img-benoit-desrosiers
+{
+float: left;
+width: 30%;
+padding: 10px;
+}
+/*Fin
+
+CSS propre aux pages cours*/
+#CN1
+{
+position: absolute;
+left: 160px;
+top: 209px;
+max-width: 838px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 14px;
+text-align: justify;
+background-color: white;
+border: 2px solid #66ccff;
+margin: 2px;
+padding: 2px;
+}
+/*Fin
+
+CSS propre à la page d'activités*/
+#album
+{
+position: absolute;
+left: 160px;
+top: 209px;
+max-width: 842px;
+margin: 2px;
+padding: 2px;
+}
+
+.activites
+{
+float: left;
+width: 160px;
+height: 140px;
+margin: 2px;
+}
+/*Fin
+
+Les annotations font preuve d'une recherche et d'une compréhension approfondi du code utilisé;
+elles servent aussi de moyen de communication entre coéquipié*/
